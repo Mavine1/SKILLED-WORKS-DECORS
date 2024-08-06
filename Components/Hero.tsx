@@ -6,7 +6,7 @@ import { Spotlight } from "./ui/Spotlight";
 
 const Hero = () => {
   return (
-    <div className="relative flex justify-center items-center flex-col overflow-hidden w-full min-h-screen bg-cover bg-center" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1506748686214e9df14f3d0f3f60f1a53a0fbb072f6c4b2c1e0e8e0d4b0d59d5c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGluZmVyaW9yfGVufDB8fHx8MTY4NDYyMjY3Mw&ixlib=rb-1.2.1&q=80&w=1080)' }}>
+    <div className="relative flex justify-center items-center flex-col overflow-hidden w-full min-h-screen bg-cover bg-center" style={{ backgroundImage: 'url(https://www.pexels.com/photo/color-shade-samples-276267/)' }}>
       {/* Overlay with borders */}
       <div className="absolute inset-0 bg-white-100 opacity-30 border-8 border-white-100"></div>
 
