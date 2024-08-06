@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 min-h-screen" style={{ backgroundImage: 'url(/path-to-your-image.jpg)' }}>
       {/* Overlay */}
-      <div className="absolute inset-0 bg-blue-900 opacity-30"></div>
+      <div className="max-w-7xl w-full absolute inset-0 bg-blue-900 opacity-30"></div>
       <div className="pb-20 pt-36">
         {/**
          *  UI: Spotlights
