@@ -14,7 +14,7 @@ const Hero = () => {
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
-          fill=""
+          fill="blue"
         />
         <Spotlight
           className="h-[80vh] w-[50vw] top-10 left-full"
