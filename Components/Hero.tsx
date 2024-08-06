@@ -6,7 +6,7 @@ import { Spotlight } from "./ui/Spotlight";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen bg-cover bg-center" style={{ backgroundImage: 'url(/path-to-your-image.jpg)' }}>
+    <div className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 min-h-screen" style={{ backgroundImage: 'url(/path-to-your-image.jpg)' }}>
       {/* Overlay */}
       <div className="absolute inset-0 bg-blue-900 opacity-30"></div>
       <div className="pb-20 pt-36">
