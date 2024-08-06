@@ -6,9 +6,9 @@ import { Spotlight } from "./ui/Spotlight";
 
 const Hero = () => {
   return (
-    div className="relative flex justify-center items-center flex-col overflow-hidden w-full min-h-screen bg-cover bg-center" style={{ backgroundImage: 'url(/path-to-your-image.jpg)' }}>
+    <div className="relative flex justify-center items-center flex-col overflow-hidden w-full min-h-screen bg-cover bg-center" style={{ backgroundImage: 'url(/path-to-your-image.jpg)' }}>
       {/* Overlay with borders */}
-      <div className="absolute inset-0 bg-blue-900 opacity-30 border-8 border-white-100"></div>
+      <div className="absolute inset-0 bg-white-100 opacity-30 border-8 border-white-100"></div>
 
       <div className="pb-20 pt-36">
         {/**
