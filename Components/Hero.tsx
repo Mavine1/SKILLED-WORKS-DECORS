@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div className="relative min-h-screen bg-cover bg-center" style={{ backgroundImage: 'url(/path-to-your-image.jpg)' }}>
       {/* Overlay */}
-      <div className="absolute inset-0 bg-blue-900 opacity-50"></div>
+      <div className="absolute inset-0 bg-blue-900 opacity-30"></div>
       <div className="pb-20 pt-36">
         {/**
          *  UI: Spotlights
