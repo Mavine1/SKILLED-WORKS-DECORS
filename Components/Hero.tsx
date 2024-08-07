@@ -29,7 +29,9 @@ const Hero = () => {
         <div className="flex justify-center relative my-20 z-10">
   <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
     <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80 bg-black bg-opacity-50 p-2 rounded">
-      Dynamic Web Magic with Next.js
+    At SKILLED WORKS DECORS, we believe in transforming spaces inside and out, 
+    creating a seamless flow of beauty from your curb to your living room. Our expert team specializes in elevating your everyday life by crafting luxurious interiors that reflect your unique style, while simultaneously enhancing your home's exterior to make a lasting impression on all who approach. Whether you're dreaming of an outdoor oasis or a cozy, stylish retreat within, we're dedicated to bringing your
+     vision to life and redefining the very essence of your living space.
     </p>
   </div>
 </div>
