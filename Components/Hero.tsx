@@ -57,7 +57,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-          Our client's sartisfaction is our outermost happiness
+          <em></em>Our client's sartisfaction is our outermost happiness
           </p>
 
           {/* <a href="#about">
