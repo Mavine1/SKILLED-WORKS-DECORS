@@ -27,12 +27,12 @@ const Hero = () => {
           <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
         </div>
         <div className="flex justify-center relative my-20 z-10">
-          <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-            <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-              Dynamic Web Magic with Next.js
-            </p>
-          </div>
-        </div>
+  <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+    <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80 bg-black p-2 rounded">
+      Dynamic Web Magic with Next.js
+    </p>
+  </div>
+</div>
       </div>
     </div>
   );
