@@ -11,7 +11,7 @@ import Grid from "@/Components/Grid";
 import { FloatingNav } from "@/Components/ui/FloatingNavbar";
 const Home = () => {
   return (
-    <main className="relative bg-gray-700 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className="relative bg-gray-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
         <Hero />
