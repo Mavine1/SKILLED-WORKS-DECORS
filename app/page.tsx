@@ -13,7 +13,7 @@ import Hero from "@/Components/Hero";
 
 const Home = () => {
   return (
-    <main className="relative bg-black-400 opacity-30 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className="relative bg-black-700 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
         {/* <FloatingNav navItems={navItems} /> */}
         <Hero />
