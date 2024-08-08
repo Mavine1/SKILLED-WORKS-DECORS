@@ -1,6 +1,7 @@
 import abouts from "./abouts";
 import brands from "./brands";
 import contact from "./contact";
+import DecorSample from "./DecorSample";
 import experiences from "./experiences";
 import skills from "./skills";
 import testimonials from "./testimonials";
@@ -13,7 +14,7 @@ export const schemaTypes = [
     experiences,
     skills,
     testimonials,
-    workExperience,
+    DecorSample
 
 ]
 
