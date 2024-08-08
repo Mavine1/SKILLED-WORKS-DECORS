@@ -1,5 +1,5 @@
 export default {
-    name: 'works',
+    name: 'Sample',
     title: 'Works',
     type: 'document',
     fields: [
@@ -21,19 +21,6 @@ export default {
         options: {
           hotspot: true,
         },
-      },
-   
-      {
-        name: 'tags',
-        title: 'Tags',
-       type:'array',
-       of: [
-         {
-           name:'tag',
-           title:'Tag',
-           type:'string'
-         }
-       ]
       },
      
     ],
