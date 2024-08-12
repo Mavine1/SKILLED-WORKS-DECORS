@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Spotlight, TextGenerateEffect } from 'ui.aceternity'; // Import necessary components
-import './Header.scss'; // Update to match the new naming convention
+import { Spotlight, TextGenerateEffect } from 'ui.aceternity'; 
+import './Header.scss'; 
 
 const Hero = () => {
   return (
