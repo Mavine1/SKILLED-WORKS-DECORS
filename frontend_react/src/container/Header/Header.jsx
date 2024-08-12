@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from '../../ui/MagicButton';
 import { Spotlight } from '../../ui/Spotlight';
-import { TextGenerateEffect } from './ui/TextGenerateEffect';
+import { TextGenerateEffect } from '../../ui/TextGenerateEffect';
 import { AppWrap } from '../../wrapper';
 import { images } from '../../constants';
 import './Header.scss';
