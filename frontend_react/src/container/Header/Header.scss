@@ -72,8 +72,8 @@
 .app__header-badge {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center; // Changed from flex-end to center
+  align-items: center; // Changed from flex-end to center
   flex-direction: column;
 
   .badge-cmp,
@@ -83,7 +83,6 @@
     border-radius: 15px;
     flex-direction: row;
     width: auto;
-
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   }
 
@@ -94,7 +93,7 @@
     p {
       width: 100%;
       text-transform: uppercase;
-      text-align: right;
+      text-align: center; // Changed from right to center
     }
   }
 
@@ -107,11 +106,10 @@
   }
 
   @media screen and (max-width: 1200px) {
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center; // Changed from flex-start to center
+    align-items: center; // Changed from flex-start to center
   }
 }
-
 .app__header-circles {
   flex: 0.75;
   display: flex;
