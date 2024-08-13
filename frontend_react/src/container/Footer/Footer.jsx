@@ -22,8 +22,8 @@ const Footer = () => {
     setLoading(true);
 
     const serviceID = 'service_h28tk1z';   // Replace with your EmailJS service ID
-    const templateID = 'your_template_id'; // Replace with your EmailJS template ID
-    const userID = 'your_user_id';         // Replace with your EmailJS user ID
+    const templateID = 'template_q6qxu98'; // Replace with your EmailJS template ID
+    const userID = '3xjDouRVuvFfUGPoZ'         // Replace with your EmailJS user ID
 
     emailjs.send(serviceID, templateID, formData, userID)
       .then((result) => {
