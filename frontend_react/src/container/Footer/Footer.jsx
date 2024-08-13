@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
-import { client } from '../../client';
 import './Footer.scss';
 
 const Footer = () => {
@@ -10,29 +10,30 @@ const Footer = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const { username, email, message } = formData;
+  const { name, email, message } = formData;
 
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     setLoading(true);
 
-    const contact = {
-      _type: 'contact',
-      name: formData.username,
-      email: formData.email,
-      message: formData.message,
-    };
+    const serviceID = 'service_h28tk1z';   // Replace with your EmailJS service ID
+    const templateID = 'your_template_id'; // Replace with your EmailJS template ID
+    const userID = 'your_user_id';         // Replace with your EmailJS user ID
 
-    client.create(contact)
-      .then(() => {
+    emailjs.send(serviceID, templateID, formData, userID)
+      .then((result) => {
+        console.log(result.text);
         setLoading(false);
         setIsFormSubmitted(true);
-      })
-      .catch((err) => console.log(err));
+      }, (error) => {
+        console.log(error.text);
+        setLoading(false);
+      });
   };
 
   return (
@@ -40,7 +41,7 @@ const Footer = () => {
       <h2 className="head-text">Take a coffee & chat with me</h2>
 
       <div className="app__footer-cards">
-        <div className="app__footer-card ">
+        <div className="app__footer-card">
           <img src={images.email} alt="email" />
           <a href="mailto:hello@micael.com" className="p-text">hello@micael.com</a>
         </div>
@@ -52,7 +53,7 @@ const Footer = () => {
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
           <div className="app__flex">
-            <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
+            <input className="p-text" type="text" placeholder="Your Name" name="name" value={name} onChange={handleChangeInput} />
           </div>
           <div className="app__flex">
             <input className="p-text" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
