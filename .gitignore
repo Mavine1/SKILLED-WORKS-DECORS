@@ -1,2 +1,4 @@
 cron-logs.json
 cron-logs.json
+# .gitignore
+.env
