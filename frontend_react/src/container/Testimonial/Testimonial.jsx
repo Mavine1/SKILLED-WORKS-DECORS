@@ -30,7 +30,7 @@ const Testimonial = () => {
 
   return (
     <>
-    <h2 className="head-text">Testimonials & brands </h2>
+    <h2 className="head-text">Testimonials & brands</h2>
 
       {testimonials.length && (
         <>
