@@ -30,7 +30,7 @@ const Testimonial = () => {
 
   return (
     <>
-    <h2 className="head-text">Skills & Experiences</h2>
+    <h2 className="head-text">Test & Experiences</h2>
       {testimonials.length && (
         <>
           <div className="app__testimonial-item app__flex">
