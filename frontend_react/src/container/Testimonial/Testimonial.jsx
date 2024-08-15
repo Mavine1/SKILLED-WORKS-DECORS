@@ -65,7 +65,9 @@ const Testimonial = () => {
       key={brand._id}
     >
       <img src={urlFor(brand.imgUrl)} alt={brand.name} />
-      <p className="app__flex">{brand.name}</p> {/* Displaying brand name */}
+      <p style={{ color: '#007bff', fontSize: '1rem', textAlign: 'center' }}>{brand.name}</p>
+
+      {/* Displaying brand name */}
     </motion.div>
   ))}
 </div>
