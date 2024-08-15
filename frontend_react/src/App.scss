@@ -10,6 +10,12 @@
 .app__primarybg {
   background-color: var(--primary-color);
 }
+.app__white{
+  
+  background: linear-gradient(90deg, #ffffff, #f0faff); /* White to custom bluish-white gradient */
+  -webkit-background-clip: text;
+  background-clip: text;    -webkit-text-fill-color: transparent; /* This will make the gradient affect the text color */
+}
 
 .app__container {
   width: 100%;
