@@ -58,9 +58,7 @@ const Work = () => {
       >
         {filterWork.map((work, index) => (
           <div className="app__work-item app__flex" key={index}>
-            <div
-              className="app__work-img app__flex"
-            >
+            <div className="app__work-img app__flex">
               <img src={urlFor(work.imgUrl)} alt={work.name} />
 
               <motion.div
@@ -76,7 +74,11 @@ const Work = () => {
               <p className="p-text" style={{ marginTop: 10 }}>{work.description}</p>
 
               <div className="app__work-tag app__flex">
-                <p className="p-text">{work.tags[0]}</p>
+                {work.tags && work.tags.length > 0 ? (
+                  <p className="p-text">{work.tags[0]}</p>
+                ) : (
+                  <p className="p-text">No tags</p>
+                )}
               </div>
             </div>
           </div>
